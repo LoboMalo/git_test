@@ -7,7 +7,7 @@ do
 done
 echo $i
 #put some contents into file
-for i in {1..10};
+for j in {1..10};
 do 
     if [ $j == 5 ]; then 
     echo "Contents of file $j" > file$j.txt
