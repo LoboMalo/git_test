@@ -1,6 +1,17 @@
-# we are writing a sample loop in bash
-# creating files
-for i in {1..3}
+#create one file
+for i in {1..100000};
 do 
-touch files$i.txt
+    if [$i==5] then 
+	touch file$i.txt
+    fi
 done
+echo $i
+#put some contents into file
+for i in {1..10};
+do 
+    if [$j==5] then 
+	echo "Contents of file $j" > file$j.txt
+    fi
+done
+
+ehco $j
